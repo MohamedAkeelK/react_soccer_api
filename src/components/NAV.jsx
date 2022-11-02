@@ -1,6 +1,7 @@
 import {useState, useEffect} from 'react'
 import { NavLink } from 'react-router-dom';
 import { getLeagues } from '../services/leagues';
+import  Logo from "../logo.jpg"
 
 export default function NAV() {
   const [country, setCountry] = useState([])
@@ -19,6 +20,7 @@ export default function NAV() {
   return (
     <nav className="nav">
       <div>
+        <img src={Logo} alt="" width="150px" className='logo'/>
         <div>
           {country.map(({ country }, i) => {
             if (i === 0) {
