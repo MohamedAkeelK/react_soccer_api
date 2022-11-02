@@ -4,7 +4,10 @@ export default function Spain({ leaguesData }) {
   if (!leaguesData) {
     return "loading"
   }
-  const mydata = leaguesData.standings.map((val, i) => {
+
+  let name = leaguesData.leagueName;
+
+  const standingsData = leaguesData.standings.map((val, i) => {
     if (!val) {
       return "";
     } else {
@@ -27,6 +30,7 @@ export default function Spain({ leaguesData }) {
 
   return (
     <div className="table-ctr">
+      <h1 className="leagueName">{name}</h1>
       <table>
         <thead>
           <tr>
@@ -41,7 +45,7 @@ export default function Spain({ leaguesData }) {
             <th>GD</th>
           </tr>
         </thead>
-        <tbody>{mydata}</tbody>
+        <tbody>{standingsData}</tbody>
       </table>
     </div>
   );
