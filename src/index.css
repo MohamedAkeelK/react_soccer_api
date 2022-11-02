@@ -59,10 +59,12 @@ code {
 }
 
 .table-ctr {
-  background-color: #354590;
+  /* background-color: #354590; */
+  background-color: rgb(59, 169, 81);
+  
   /* margin: auto; */
   width: 100%;
-  padding: 10px;
+  padding: 20px;
   /* padding-left: 10px;
   padding-right: 10px;
   padding-bottom: 10px; */
@@ -79,7 +81,9 @@ table {
 
 th {
   padding:10px 0px;
-  background-color: rgb(226, 95, 95);
+  /* background-color: rgb(226, 95, 95); */
+  background-color: #354590;
+
   color: whitesmoke;
 }
 
