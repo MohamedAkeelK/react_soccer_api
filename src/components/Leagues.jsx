@@ -31,7 +31,7 @@ export default function Leagues({ leaguesData }) {
   });
 
   return (
-    <div>
+    <div className="table-ctr">
       <table>
         <thead>
           <tr>

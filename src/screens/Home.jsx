@@ -17,8 +17,6 @@ export default function Home() {
   if(!leagues) return "...loading"
 
   return (
-    <div>
       <Leagues leaguesData={leagues} /> 
-    </div>
   )
 }
