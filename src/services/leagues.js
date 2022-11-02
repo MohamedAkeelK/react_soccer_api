@@ -5,7 +5,7 @@ export const getLeagues = async () => {
     const response = await axios.get(
       "https://soccer-standings-api-production.up.railway.app/leagues"
     );
-    console.log(response.data);
+    // console.log(response.data);
     return response.data;
   } catch (error) {
     throw error;

@@ -8,6 +8,7 @@ function App() {
       <NAV />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/Spain" element={<Home />} />
       </Routes>
     </div>
   );

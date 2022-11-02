@@ -9,8 +9,9 @@ export default function Leagues({ leaguesData }) {
     if (!val) {
       return "";
     } else {
+      // console.log(val.country)
       return val.standings.map((standing, i) => {
-        console.log(standing)
+        // console.log(standing)
         return (
           <tr key={i}>
             <td>{standing.Position}</td>
@@ -22,8 +23,6 @@ export default function Leagues({ leaguesData }) {
             <td>{standing.Loosed}</td>
             <td>{standing.Tie}</td>
             <td>{standing["Goal Difference"]}</td>
-
-
           </tr>
         );
       });
