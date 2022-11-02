@@ -9,13 +9,24 @@ export default function Leagues({ leaguesData }) {
     if (!val) {
       return "";
     } else {
-      return (
-        <tr key={i}>
-          <td>{val.leagueName}</td>
-          <td>{val.country}</td>
-          <td>See standings</td>
-        </tr>
-      );
+      return val.standings.map((standing, i) => {
+        console.log(standing)
+        return (
+          <tr key={i}>
+            <td>{standing.Position}</td>
+            <td><img src={standing.SquadLogo} /></td>
+            <td>{standing.Name}</td>
+            <td>{standing.Points}</td>
+            <td>{standing.Played}</td>
+            <td>{standing.Winned}</td>
+            <td>{standing.Loosed}</td>
+            <td>{standing.Tie}</td>
+            <td>{standing["Goal Difference"]}</td>
+
+
+          </tr>
+        );
+      });
     }
   });
 
@@ -24,14 +35,18 @@ export default function Leagues({ leaguesData }) {
       <table>
         <thead>
           <tr>
-            <th>League</th>
-            <th>Country</th>
-            <th>Standings</th>
+            <th>Pos</th>
+            <th>Logo</th>
+            <th>Name</th>
+            <th>Pts</th>
+            <td>Ply</td>
+            <th>W</th>
+            <th>L</th>
+            <th>T</th>
+            <th>GD</th>
           </tr>
         </thead>
-        <tbody>
-          {mydata}
-        </tbody>
+        <tbody>{mydata}</tbody>
       </table>
     </div>
   );
