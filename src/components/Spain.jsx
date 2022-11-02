@@ -8,11 +8,11 @@ export default function Spain({ leaguesData }) {
     if (!val) {
       return "";
     } else {
-      console.log(val)
+      // console.log(val)
              return (
           <tr key={i}>
             <td>{val.Position}</td>
-            <td><img src={val.SquadLogo} /></td>
+            <td><img src={val.SquadLogo} alt={val.Name} /></td>
             <td>{val.Name}</td>
             <td>{val.Points}</td>
             <td>{val.Played}</td>
