@@ -35,14 +35,14 @@ export default function Leagues({ leaguesData }) {
       <table>
         <thead>
           <tr>
-            <th>Pos</th>
+            <th>Position</th>
             <th>Logo</th>
             <th>Name</th>
-            <th>Pts</th>
-            <td>Ply</td>
-            <th>W</th>
-            <th>L</th>
-            <th>T</th>
+            <th>Points</th>
+            <th>Played</th>
+            <th>Win</th>
+            <th>Loss</th>
+            <th>Tie</th>
             <th>GD</th>
           </tr>
         </thead>
