@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Spain({ leaguesData }) {
+export default function League({ leaguesData }) {
   if (!leaguesData) {
     return "loading"
   }

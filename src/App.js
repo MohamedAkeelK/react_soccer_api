@@ -1,10 +1,8 @@
-import NAV from "./components/NAV.jsx";
 import { useState, useEffect } from "react";
 import { getLeagues } from "./services/leagues.js";
-
-// import Home from "./screens/Home.jsx";
 import { Routes, Route } from "react-router-dom";
-import Spain from "./components/Spain.jsx";
+import NAV from "./components/NAV.jsx";
+import League from "./components/League.jsx";
 
 function App() {
   const [leagues, setLeagues] = useState([]);
@@ -24,11 +22,11 @@ function App() {
       <NAV />
       <Routes>
         {/* <Route path="/" element={<Home />} /> */}
-        <Route path="/Spain" element={<Spain leaguesData={leagues[0]} />} />
-        <Route path="/England" element={<Spain leaguesData={leagues[1]} />} />
-        <Route path="/Portugal" element={<Spain leaguesData={leagues[2]} />} />
-        <Route path="/Italy" element={<Spain leaguesData={leagues[3]} />} />
-        <Route path="/France" element={<Spain leaguesData={leagues[4]} />} />
+        <Route path="/Spain" element={<League leaguesData={leagues[0]} />} />
+        <Route path="/England" element={<League leaguesData={leagues[1]} />} />
+        <Route path="/Portugal" element={<League leaguesData={leagues[2]} />} />
+        <Route path="/Italy" element={<League leaguesData={leagues[3]} />} />
+        <Route path="/France" element={<League leaguesData={leagues[4]} />} />
       </Routes>
     </div>
   );
