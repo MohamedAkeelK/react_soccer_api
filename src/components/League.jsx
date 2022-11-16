@@ -10,6 +10,7 @@ export default function League({ leaguesData }) {
   const standingsData = leaguesData.standings.map((val, i) => {
     if (!val) {
       return "";
+      
     } else {
       // console.log(val)
              return (
